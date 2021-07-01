@@ -90,6 +90,44 @@ body {
     background: #fff;
 }
 
+.banner-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-1.jpg") no-repeat bottom / cover;
+    filter: blur(2px);
+} 
+
+.banner-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-2.jpg") no-repeat center / cover;
+    filter: blur(2px);
+}
+
+.banner-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-3.jpg") no-repeat center / cover;
+    filter: blur(2px);
+}
+
+.banner-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-4.jpg") no-repeat center / cover;
+    filter: blur(2px);
+}
+
+.banner-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-5.jpg") no-repeat center / cover;
+    filter: blur(2px);
+}
+
+.banner-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-6.jpg") no-repeat center / cover;
+    filter: blur(2px);
+}
+
+h1 {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 22222222222;
+}
+
 @media (max-width: 991px) {
     .nav-link:focus, 
     .nav-link:hover {
@@ -98,6 +136,35 @@ body {
 
     .nav-link {
         line-height: 2.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+    h1 {
+        font-size: 3.8rem;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .carousel-item {
+        height: 60vh;
+    }
+    
+    h1 {
+        font-size: 4.5rem;
     }
 }
 
