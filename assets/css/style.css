@@ -91,33 +91,27 @@ body {
 }
 
 .banner-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-1.jpg") no-repeat bottom / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(68, 52, 52, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/banner-1.jpg") no-repeat center / cover;
 } 
 
 .banner-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-2.jpg") no-repeat center / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/banner-2.jpg") no-repeat center / cover;
 }
 
 .banner-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-3.jpg") no-repeat center / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/banner-3.jpg") no-repeat center / cover;
 }
 
 .banner-4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-4.jpg") no-repeat center / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/banner-4.jpg") no-repeat top / cover;
 }
 
 .banner-5 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-5.jpg") no-repeat center / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/banner-5.jpg") no-repeat center / cover;
 }
 
 .banner-6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/banner-6.jpg") no-repeat center / cover;
-    filter: blur(2px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/banner-6.jpg") no-repeat top / cover;
 }
 
 h1 {
@@ -125,7 +119,7 @@ h1 {
     left: 20px;
     right: 20px;
     transform: translateY(-50%);
-    z-index: 22222222222;
+    z-index: 1000;
 }
 
 @media (max-width: 991px) {
@@ -137,30 +131,33 @@ h1 {
     .nav-link {
         line-height: 2.2;
     }
+
+    .carousel-item {
+        filter: blur(1px);
+    }
 }
 
 @media (max-width: 768px) {
     .carousel-item {
-        height: 40vh;
+        height: 45vh;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 540px) {
     h1 {
         font-size: 3rem;
     }
 }
 
-@media (min-width: 551px) and (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 768px) {
     h1 {
         font-size: 3.8rem;
     }
 }
 
-
 @media (min-width: 769px) {
     .carousel-item {
-        height: 60vh;
+        height: 50vh;
     }
     
     h1 {
@@ -186,5 +183,16 @@ h1 {
      
     .navbar-brand {
         transition: all .3s ease-out;
+    }
+
+    .carousel-item {
+        height: 60vh;
+        filter: blur(2px);
+    }
+}
+
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 7rem;
     }
 }
