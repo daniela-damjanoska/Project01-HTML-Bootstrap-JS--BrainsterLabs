@@ -122,6 +122,69 @@ h1 {
     z-index: 1000;
 }
 
+.bg-darkgrey {
+    background-color: #302f38;
+}
+
+.box {
+    display: block;
+    position: relative;
+    cursor: pointer; 
+}
+
+.box:focus {
+    background-color: #eb3b3b;
+}
+
+.box:focus p {
+    color: #302f38;
+    font-weight: bold;
+} 
+  
+/* Browser's default checkbox hidden */
+.box input {
+    display: none;
+}
+  
+/* Custom checkbox */
+.check-mark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    height: 30px;
+    width: 30px;
+    background-color: #302f38;
+    border-radius: 15px;
+}
+
+label > p {
+    width: 80%;
+}
+
+/* Check mark (hidden when not checked) */
+.check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Check mark when checked */
+.box input:checked ~ .check-mark:after {
+    display: block;
+}
+  
+/* Check mark style */
+.box .check-mark:after {
+    left: 11px;
+    top: 4px;
+    width: 9px;
+    height: 17px;
+    border: solid #eb3b3b;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
 @media (max-width: 991px) {
     .nav-link:focus, 
     .nav-link:hover {
