@@ -133,15 +133,16 @@ h1 {
 
 .box:focus {
     background-color: #eb3b3b;
+    border-right: none;
+    border-left: none;
 }
 
 .box:focus p {
     color: #302f38;
-    font-weight: bold;
 } 
   
 /* Browser's default checkbox hidden */
-.box input {
+.box input[type='checkbox'] {
     display: none;
 }
   
@@ -169,7 +170,7 @@ label > p {
 }
   
 /* Check mark when checked */
-.box input:checked ~ .check-mark:after {
+.box input[type='checkbox']:checked ~ .check-mark:after {
     display: block;
 }
   
@@ -211,19 +212,27 @@ label > p {
     }
 }
 
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 541px) and (max-width: 767px) {
     h1 {
         font-size: 3.8rem;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .carousel-item {
         height: 50vh;
     }
     
     h1 {
         font-size: 4.5rem;
+    }
+
+    .border-r {
+        border-right: 1px solid #424242;
+    }
+    
+    .border-l {
+        border-left: 1px solid #424242;
     }
 }
 
