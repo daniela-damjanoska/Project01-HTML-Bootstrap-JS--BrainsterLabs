@@ -3,7 +3,7 @@
 }
 
 .text-darkgrey {
-    color: #302f38;
+    color: #1f1a06
 }
 
 .navbar-brand {
@@ -183,6 +183,33 @@ label > p {
     border: solid #eb3b3b;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
+}
+
+.card {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+}
+
+.card-text {
+    line-height: 1.2;
+}
+a.card {
+    transition: all .3s ease-in-out;
+}
+
+a.card:hover {
+    color: #1f1a06; 
+    text-decoration: none;
+    transform: scale(1.03);
 }
 
 @media (max-width: 991px) {
