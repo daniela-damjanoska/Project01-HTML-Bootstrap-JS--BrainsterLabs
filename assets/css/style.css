@@ -208,6 +208,10 @@ label > p {
     background-color: #fd0000da;
 }
 
+.text-red {
+    color: #d31313da;
+}
+
 @media (max-width: 991px) {
     .nav-link:focus, 
     .nav-link:hover {
