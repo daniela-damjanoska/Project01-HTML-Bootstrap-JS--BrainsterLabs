@@ -58,17 +58,17 @@
         <div class="container-fluid">
             <!-- checkbox-section -->
             <div class="row bg-darkgrey text-white">
-                <label class="col-12 col-md-4 box px-4 py-4 mb-0 border-r" for="marketing-cards" tabindex="1">
+                <label class="col-12 col-md-4 box px-4 py-4 mb-0 border-r" for="marketing-cards" tabindex="1" id="filter-marketing">
                     <p class="mb-0 h6 font-weight-bold">Проекти на студенти од Академијата за маркетинг</p>
                     <input type="checkbox" id="marketing-cards">
                     <span class="check-mark"></span>  
                 </label>
-                <label class="col-12 col-md-4 box px-4 py-4 mb-0" for="programming-cards" tabindex="2">
+                <label class="col-12 col-md-4 box px-4 py-4 mb-0" for="programming-cards" tabindex="2" id="filter-programming">
                     <p class="mb-0 h6 font-weight-bold">Проекти на студенти од Академијата за програмирање</p>
                     <input type="checkbox" id="programming-cards">
                     <span class="check-mark"></span>  
                 </label>
-                <label class="col-12 col-md-4 box px-4 py-4 mb-0 border-l" for="design-cards" tabindex="3">
+                <label class="col-12 col-md-4 box px-4 py-4 mb-0 border-l" for="design-cards" tabindex="3" id="filter-design">
                     <p class="mb-0 h6 font-weight-bold">Проекти на студенти од Академијата за дизајн</p>
                     <input type="checkbox" id="design-cards">
                     <span class="check-mark"></span>  
@@ -82,8 +82,8 @@
                         <div class="col-12">
                             <h2 class="h1 text-md-center font-weight-bold mb-5">Проекти</h2>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-1.webp" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -91,13 +91,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-1.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -105,13 +105,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-2.webp" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -119,13 +119,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 design">
                                     <img src="./img/design-1.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за дизајн</p>
@@ -133,13 +133,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-3.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -147,13 +147,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-2.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -161,13 +161,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-4.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -175,13 +175,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-5.webp" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -189,13 +189,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 design">
                                     <img src="./img/design-2.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за дизајн</p>
@@ -203,13 +203,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-3.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -217,13 +217,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-6.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -231,13 +231,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 design">
                                     <img src="./img/design-3.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за дизајн</p>
@@ -245,13 +245,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-7.webp" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -259,13 +259,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-4.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -273,13 +273,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-8.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -287,13 +287,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-5.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -301,13 +301,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 design">
                                     <img src="./img/design-4.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за дизајн</p>
@@ -315,13 +315,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-9.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -329,13 +329,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 programming">
                                     <img src="./img/programming-10.jpg" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за програмирање</p>
@@ -343,13 +343,13 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <a href="#" class="card border-0 shadow-lg text-darkgrey mb-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-lg text-darkgrey mb-4 marketing">
                                     <img src="./img/marketing-6.webp" alt="" class="card-img-top">
                                 <div class="card-body">
                                     <p class="d-inline-block bg-yellow p-2 font-weight-bold rounded">Академија за маркетинг</p>
@@ -357,10 +357,10 @@
                                     <p class="card-text">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
                                     <p class="small font-weight-bold">Април-октомври 2020</p>
                                     <div class="text-right pt-2">
-                                        <span class="btn text-white bg-red font-weight-bold">Дознај повеќе</span>
+                                        <a href="#" target="_blank" class="btn text-white bg-red font-weight-bold">Дознај повеќе</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
