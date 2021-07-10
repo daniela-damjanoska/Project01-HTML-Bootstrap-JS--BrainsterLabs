@@ -130,16 +130,6 @@ h1 {
     position: relative;
     cursor: pointer; 
 }
-
-.box:focus {
-    background-color: #eb3b3b;
-    border-right: none;
-    border-left: none;
-}
-
-.box:focus p {
-    color: #302f38;
-} 
   
 /* Browser's default checkbox hidden */
 .box input[type='checkbox'] {
@@ -190,6 +180,9 @@ label > p {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    overflow: hidden; 
+    transform-origin: 50% 70%;
+    transition: transform .2s ease-in;
 }
 
 .card-img-top {
@@ -202,14 +195,17 @@ label > p {
 .card-text {
     line-height: 1.2;
 }
-a.card {
-    transition: all .3s ease-in-out;
+
+.card:hover {
+    transform: scale(1.02);
 }
 
-a.card:hover {
-    color: #1f1a06; 
-    text-decoration: none;
-    transform: scale(1.03);
+.card-body a {
+    transition: background-color .3s ease-in;
+}
+
+.card-body a:hover {
+    background-color: #fd0000da;
 }
 
 @media (max-width: 991px) {
