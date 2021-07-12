@@ -118,11 +118,6 @@
     background: #fff;
 }
 
-/* blur the body when navbar is open*/
-.blur-body > :not(.navbar-wrapper) {
-    filter: blur(3px);
-}
-
 .banner-1 {
     background: linear-gradient(rgba(68, 52, 52, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/banner-1.jpg") no-repeat center / cover;
 } 
@@ -331,11 +326,6 @@ label > p {
         min-height: 100vh;
     }
 
-    /* blur the body background when navbar is open on tablet*/
-    .blur-body > :not(.navbar-wrapper) {
-    filter: blur(3px);
-    }
-
     .custom-h1 {
         font-size: 3rem;
     }
@@ -344,6 +334,13 @@ label > p {
 @media (min-width: 541px) and (max-width: 767px) {
     .custom-h1 {
         font-size: 3.8rem;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 991px) {
+    /* blur the body background when navbar is open on tablet*/
+    .blur-body > :not(.navbar-wrapper) {
+        filter: blur(3px);
     }
 }
 
