@@ -4,6 +4,14 @@ $(document).ready(function() {
     });
   })
 
+$(function() {
+  $('#navbarSupportedContent').on("show.bs.collapse", function()  {
+    $("body").addClass("blur-body")
+    }).on("hide.bs.collapse", function()  {
+      $("body").removeClass("blur-body");
+    });
+  })
+
 document.querySelector('#marketing-cards').addEventListener('change', filterMarketing);
 document.querySelector('#programming-cards').addEventListener('change', filterProgramming);
 document.querySelector('#design-cards').addEventListener('change', filterDesign);

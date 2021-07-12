@@ -13,34 +13,46 @@
     </head>
     <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-yellow">
-            <a class="navbar-brand mr-0 mx-lg-4 text-darkgrey text-center py-0 my-lg-2" href="index.html">
-                <div class="navbar-logo d-inline-block">
-                    <img src="./img/Logo.png" alt="logo Brainster" class="w-100 d-block">
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-lg bg-yellow">
+                <a class="navbar-brand mr-0 mx-lg-4 text-darkgrey text-center py-0 my-lg-2" href="index.html">
+                    <div class="navbar-logo d-inline-block">
+                        <img src="./img/Logo.png" alt="logo Brainster" class="w-100 d-block">
+                    </div>
+                    <p class="text-uppercase font-weight-bold mb-0 font-logo">Brainster</p>
+                </a>
+                <div class="navbar-toggler icon-hamburger" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger"></div>
                 </div>
-                <p class="text-uppercase font-weight-bold mb-0 font-logo">Brainster</p>
-            </a>
-            <div class="navbar-toggler icon-hamburger" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger"></div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav font-weight-bold align-items-lg-center mx-auto">
-                    <li class="nav-item mr-4">
-                        <a class="nav-link text-white" href="https://marketpreneurs.brainster.co" target="_blank">Академија за маркетинг</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link text-white" href="https://codepreneurs.brainster.co" target="_blank">Академија за програмирање</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link text-white" href="https://datascience.brainster.co" target="_blank">Академија за data science</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="https://design.brainster.co" target="_blank">Академија за дизајн</a>
-                    </li>
-                </ul>
-                <a class="btn bg-red font-weight-bold text-white mr-3 my-4 my-lg-0 btn-hover" href="registration.html" target="_blank">Вработи наш студент</a>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav font-weight-bold align-items-lg-center mx-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-white" href="https://marketpreneurs.brainster.co" target="_blank">Академија за маркетинг</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-white" href="https://codepreneurs.brainster.co" target="_blank">Академија за програмирање</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link text-white" href="https://datascience.brainster.co" target="_blank">Академија за data science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mb-5 mb-lg-0" href="https://design.brainster.co" target="_blank">Академија за дизајн</a>
+                        </li>
+                    </ul>
+                    <a href="registration.html" target="_blank" class="position-relative mr-lg-3">
+                        <div class="content">
+                            <button class="btn-animated">
+                                <svg>
+                                    <polyline points="179,1 179,49 1,49 1,1 179,1"/>
+                                    <polyline points="179,1 179,49 1,49 1,1 179,1"/>
+                                </svg>
+                                <span class="text-white font-weight-bold">Вработи наш студент</span>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
         <!-- !! -->
         <!-- banner-section -->
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="2500" data-ride="carousel">
