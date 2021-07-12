@@ -7,27 +7,56 @@
 }
 
 .navbar-brand {
-    width: 70px;
+    width: 60px;
+    transition: all .3s ease-out;
 }
 
-.navbar-logo {
-    width: 48px;
+.navbar-brand:hover {
+    color: #940505e8;
 }
 
 .font-logo {
     font-size: .7rem;
 }
 
-.btn-hover {
-    transition: all .3s ease-out;
-}
-    
-.btn-hover:hover {
-    background-color: #ee1b1bcb;
-}
-
 .bg-red {
     background-color: #d31313da;
+}
+
+.content {
+    width: 180px;
+    height: 50px;
+  }
+  
+.btn-animated {
+    width: 180px;
+    height: 50px;
+    background-color: #d31313da;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+ 
+.btn-animated svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    width: 180px;
+    height: 60px;
+}
+  
+.btn-animated:hover {
+    transition: 1s ease-in-out;
+    background-color: #940505e8;
+}
+  
+.btn-animated:hover svg {
+    stroke-dashoffset: -480;
 }
 
 .navbar-toggler {
@@ -55,7 +84,7 @@
   
 .icon-hamburger {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 13px;
     width: 60px;
     height: 50px;
@@ -87,6 +116,11 @@
     top: 0;
     transform:rotate(225deg);
     background: #fff;
+}
+
+/* blur the body when navbar is open*/
+.blur-body > :not(.navbar-wrapper) {
+    filter: blur(3px);
 }
 
 .banner-1 {
@@ -205,7 +239,7 @@ label > p {
 }
 
 .card-body a:hover {
-    background-color: #fd0000da;
+    background-color: #940505e8;
 }
 
 .text-red {
@@ -230,8 +264,8 @@ label > p {
     background: #fff url("https://img.icons8.com/ios-filled/50/000000/expand-arrow--v1.png") right .75rem center/8px 10px no-repeat;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    /* -webkit-appearance: none;
-    -moz-appearance: none; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
@@ -253,6 +287,28 @@ label > p {
         line-height: 2.2;
     }
 
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+        width: 55%;
+        top: 0;
+        padding-top: 70px;
+        padding-left: 20px;
+        background-color: #302f38;
+        height: 55vh;
+        z-index: 2000;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        z-index: 2001;
+    }
+
+    .content {
+        position: absolute;
+        left: 0;
+    }
+
     .carousel-item {
         filter: blur(1px);
     }
@@ -270,6 +326,16 @@ label > p {
 }
 
 @media (max-width: 540px) {
+    .navbar-collapse {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    /* blur the body background when navbar is open on tablet*/
+    .blur-body > :not(.navbar-wrapper) {
+    filter: blur(3px);
+    }
+
     .custom-h1 {
         font-size: 3rem;
     }
@@ -300,10 +366,6 @@ label > p {
 }
 
 @media (min-width: 992px) {
-    .navbar-brand:hover {
-        color: #d31313da;
-    }
-    
     .nav-link:focus, 
     .nav-link:hover {
         transform: scale(1.1);
@@ -315,10 +377,6 @@ label > p {
         transition: .3s ease-in-out;
     }
      
-    .navbar-brand {
-        transition: all .3s ease-out;
-    }
-
     .carousel-item {
         height: 60vh;
         filter: blur(2px);
