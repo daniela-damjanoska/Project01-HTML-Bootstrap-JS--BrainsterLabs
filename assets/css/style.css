@@ -231,7 +231,8 @@ label > p {
     text-decoration: none;
 }
 
-.card-body span {
+.card-body span,
+input[type='submit'] {
     transition: background-color .3s ease-in;
 }
 
@@ -248,19 +249,26 @@ label > p {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
+.input-lg {
+    font-size: 1rem;
+    height: 1rem;
+    padding: 1.5rem .75rem;
+
+}
+
 .custom-selection {
     display: inline-block;
     width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem 1.75rem .375rem .75rem;
-    font-size: 1rem;
+    height: calc(1.5em + 1rem + 8px);
+    padding: .5rem .75rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #1f1a06;
+    color: #495057;
     vertical-align: middle;
     background: #fff url("https://img.icons8.com/ios-filled/50/000000/expand-arrow--v1.png") right .75rem center/8px 10px no-repeat;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border-radius: .3rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -272,6 +280,15 @@ label > p {
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.custom-option {
+    font-size: 1.1rem; 
+    color: #495057;
+}
+
+input[type='submit']:hover {
+    background-color: #940505e8;
 }
 
 @media (max-width: 991px) {
@@ -317,7 +334,7 @@ label > p {
     }
 
     .custom-padding {
-        padding-top: 150px;
+        padding-top: 155px;
         padding-bottom: 70px;
     }
 }

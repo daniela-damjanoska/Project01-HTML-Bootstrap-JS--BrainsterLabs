@@ -67,32 +67,35 @@
                                 <div class="form-row">
                                     <div class="col-12 col-md-6">
                                         <label for="name-surname" class="text-darkgrey font-weight-bold">Име и презиме</label>
-                                        <input type="text" class="form-control font-italic" placeholder="Вашето име и презиме" id="name-surname" name="name-surname">
+                                        <input type="text" class="form-control font-italic input-lg" placeholder="Вашето име и презиме" id="name-surname" name="name-surname">
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <label for="company-name" class="text-darkgrey font-weight-bold pt-3 pt-md-0">Име на компанија</label>
-                                        <input type="text" class="form-control font-italic" placeholder="Име на Вашата компанија" id="company-name" name="company-name">
+                                        <label for="company-name" class="text-darkgrey font-weight-bold pt-3 pt-md-0">Име на компанија
+                                        </label>
+                                        <input type="text" class="form-control font-italic input-lg" placeholder="Име на Вашата компанија" id="company-name" name="company-name">
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <label for="email" class="text-darkgrey font-weight-bold pt-3">Контакт имејл</label>
-                                        <input type="email" class="form-control font-italic" placeholder="Контакт имејл на Вашата компанија" id="email" name="email">
+                                        <input type="email" class="form-control font-italic input-lg" placeholder="Контакт имејл на Вашата компанија" id="email" name="email">
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <label for="tel" class="text-darkgrey font-weight-bold pt-3">Контакт телефон</label>
-                                        <input type="tel" class="form-control font-italic" placeholder="Контакт телефон на Вашата компанија" id="tel" name="tel">
+                                        <input type="tel" class="form-control font-italic input-lg" placeholder="Контакт телефон на Вашата компанија" id="tel" name="tel">
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <label for="select-student" class="text-darkgrey font-weight-bold pt-3">Тип на студенти</label>
                                         <select class="custom-selection font-weight-bold" id="select-student">
+                                          <div class="">
                                             <option hidden>Изберете тип на студент</option> 
-                                            <option value="marketing-students" class="text-darkgrey font-weight-bold">Студенти од маркетинг</option>
-                                            <option value="programming-students" class="text-darkgrey font-weight-bold">Студенти од програмирање</option>
-                                            <option value="data-science-students" class="text-darkgrey font-weight-bold">Студенти од data science</option>
-                                            <option value="design-students" class="text-darkgrey font-weight-bold">Студенти од дизајн</option>
+                                            <option value="marketing-students" class="text-darkgrey font-weight-bold custom-option">Студенти од маркетинг</option>
+                                            <option value="programming-students" class="text-darkgrey font-weight-bold custom-option">Студенти од програмирање</option>
+                                            <option value="data-science-students" class="text-darkgrey font-weight-bold custom-option">Студенти од data science</option>
+                                            <option value="design-students" class="text-darkgrey font-weight-bold custom-option">Студенти од дизајн</option>
+                                          </div>
                                         </select>
                                     </div>
                                     <div class="col-12 col-md-6 align-self-md-end custom-padding">
-                                        <input type="submit" value="испрати" class="btn bg-red btn-block text-white text-uppercase font-weight-bold">
+                                        <input type="submit" value="испрати" class="btn btn-lg bg-red btn-block text-white font-weight-bold">
                                     </div>
                                 </div>     
                             </form>
