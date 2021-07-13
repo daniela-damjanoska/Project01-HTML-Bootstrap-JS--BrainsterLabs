@@ -128,3 +128,16 @@ function changeColorThreeReverse() {
   document.querySelector('#filter-design').style.background = "#302f38";
   document.querySelector('#filter-design p').style.color = "#fff";
 }
+
+$(document).ready(function () {
+  $('#myList a:lt(6)').show();
+  x=6; 
+  $('#loadMore').on('click', function (e) {
+    e.preventDefault();
+    x = x+6;
+    $('#myList a').slice(0, x).slideDown();
+    if(x > 20) {
+      $("#loadMore").hide();
+    }
+  });
+});
