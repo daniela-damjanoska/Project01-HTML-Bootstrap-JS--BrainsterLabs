@@ -137,21 +137,21 @@ $("#loadMore").on("click", function(){
   }
 })
 
-$("#marketing-cards").on("click", function(){
+$("#marketing-cards").on("change", function(){
   $(".card.marketing:hidden").show();
   if($(".card.marketing:hidden").length ==0) {
     $("#loadMore").fadeOut();
   }
 })
 
-$("#programming-cards").on("click", function(){
+$("#programming-cards").on("change", function(){
   $(".card.programming:hidden").show();
   if($(".card.programming:hidden").length ==0) {
     $("#loadMore").fadeOut();
   }
 })
 
-$("#design-cards").on("click", function(){
+$("#design-cards").on("change", function(){
   $(".card.design:hidden").show();
   if($(".card.design:hidden").length ==0) {
     $("#loadMore").fadeOut();
