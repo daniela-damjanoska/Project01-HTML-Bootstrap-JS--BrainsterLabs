@@ -353,7 +353,7 @@ input[type='submit']:hover {
         font-size: 3rem;
     }
 
-    #myList .card {
+    .card:not(.shown) {
         display:none;
     }
 }

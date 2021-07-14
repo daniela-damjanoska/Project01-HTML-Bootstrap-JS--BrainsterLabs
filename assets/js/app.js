@@ -129,15 +129,31 @@ function changeColorThreeReverse() {
   document.querySelector('#filter-design p').style.color = "#fff";
 }
 
-$(document).ready(function () {
-  $('#myList a:lt(6)').show();
-  x=6; 
-  $('#loadMore').on('click', function (e) {
-    e.preventDefault();
-    x = x+6;
-    $('#myList a').slice(0, x).slideDown();
-    if(x > 20) {
-      $("#loadMore").hide();
-    }
-  });
-});
+$(".card").slice(0, 6).show();
+$("#loadMore").on("click", function(){
+  $(".card:hidden").slice(0, 6).show();
+  if($(".card:hidden").length ==0) {
+    $("#loadMore").fadeOut();
+  }
+})
+
+$("#marketing-cards").on("click", function(){
+  $(".card.marketing:hidden").show();
+  if($(".card.marketing:hidden").length ==0) {
+    $("#loadMore").fadeOut();
+  }
+})
+
+$("#programming-cards").on("click", function(){
+  $(".card.programming:hidden").show();
+  if($(".card.programming:hidden").length ==0) {
+    $("#loadMore").fadeOut();
+  }
+})
+
+$("#design-cards").on("click", function(){
+  $(".card.design:hidden").show();
+  if($(".card.design:hidden").length ==0) {
+    $("#loadMore").fadeOut();
+  }
+})
