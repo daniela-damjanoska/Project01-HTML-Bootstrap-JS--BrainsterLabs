@@ -337,6 +337,10 @@ input[type='submit']:hover {
         padding-top: 155px;
         padding-bottom: 70px;
     }
+
+    .border-b {
+        border-bottom: 1px solid #424242;
+    }
 }
 
 @media (max-width: 540px) {
