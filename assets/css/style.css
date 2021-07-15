@@ -356,6 +356,10 @@ input[type='submit']:hover {
     .card:not(.shown) {
         display:none;
     }
+
+    #loadMore {
+        display: inline-block;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 767px) {
@@ -368,6 +372,12 @@ input[type='submit']:hover {
     /* blur the body background when navbar is open on tablet*/
     .blur-body > :not(.navbar-wrapper) {
         filter: blur(3px);
+    }
+}
+
+@media (min-width: 601px) {
+    #loadMore {
+        display: none;
     }
 }
 
