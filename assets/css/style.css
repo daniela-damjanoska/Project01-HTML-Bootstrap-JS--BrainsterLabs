@@ -291,8 +291,7 @@ input[type='submit']:hover {
     background-color: #940505e8;
 }
 
-@media (max-width: 991px) {
-    .nav-link:focus, 
+@media (max-width: 991px) { 
     .nav-link:hover {
         text-decoration: underline;
     }
@@ -400,7 +399,6 @@ input[type='submit']:hover {
 }
 
 @media (min-width: 992px) {
-    .nav-link:focus, 
     .nav-link:hover {
         transform: scale(1.1);
         color: #d31313da !important;
