@@ -312,7 +312,7 @@ input[type='submit']:hover {
         padding-top: 70px;
         padding-left: 20px;
         background-color: #302f38;
-        height: 65vh;
+        height: 400px;
         z-index: 2000;
     }
 
