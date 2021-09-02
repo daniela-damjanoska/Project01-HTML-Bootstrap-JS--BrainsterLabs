@@ -12,7 +12,8 @@
 }
 
 .navbar-brand:hover {
-    color: #940505e8;
+    color: #000000;
+    transform: scale(1.1);
 }
 
 .font-logo {
@@ -25,12 +26,12 @@
 
 .content {
     width: 180px;
-    height: 50px;
+    height: 40px;
 }
   
 .btn-animated {
     width: 180px;
-    height: 50px;
+    height: 40px;
     background-color: #d31313da;
     border: 1px solid transparent;
     outline: none;
@@ -43,11 +44,9 @@
     top: 0;
     fill: none;
     stroke: #fff;
-    stroke-dasharray: 150 480;
+    stroke-dasharray: 150 440;
     stroke-dashoffset: 150;
     transition: 1s ease-in-out;
-    width: 180px;
-    height: 60px;
 }
   
 .btn-animated:hover {
@@ -56,7 +55,7 @@
 }
   
 .btn-animated:hover svg {
-    stroke-dashoffset: -480;
+    stroke-dashoffset: -440;
 }
 
 .navbar-toggler {
