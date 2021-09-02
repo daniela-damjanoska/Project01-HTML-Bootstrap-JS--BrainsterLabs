@@ -28,6 +28,11 @@
     width: 180px;
     height: 40px;
 }
+
+svg {
+    width: 180px;
+    height: 40px;
+}
   
 .btn-animated {
     width: 180px;
@@ -302,12 +307,12 @@ input[type='submit']:hover {
     .navbar-collapse {
         position: absolute;
         right: 0;
-        width: 55%;
+        width: 45%;
         top: 0;
         padding-top: 70px;
         padding-left: 20px;
         background-color: #302f38;
-        height: 55vh;
+        height: 65vh;
         z-index: 2000;
     }
 
